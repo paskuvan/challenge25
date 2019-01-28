@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_28_214710) do
+ActiveRecord::Schema.define(version: 2019_01_28_232326) do
 
   create_table "sales", force: :cascade do |t|
     t.integer "cod"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2019_01_28_214710) do
     t.float "total"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "category"
   end
 
 end
