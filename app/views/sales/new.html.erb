@@ -1,0 +1,22 @@
+<h1> Registro de ventas </h1>
+
+<%= form_with model: Sale.new, url: sales_path, local: true, method: 'post' do |f| %>
+
+  <%= f.label :detail,  "Detalle de la venta:" %>
+  <%= f.text_area :detail %> <br><br>
+
+  <%= f.label :category, "Categoría:" %>
+  <%= f.text_field :category %><br><br>
+
+  <%= f.label :value, "Valor:" %>
+  <%= f.number_field :value %><br><br>
+
+  <%= f.label :discount, "Descuento:" %>
+  <%= f.number_field :discount %><br><br>
+
+  <%= f.label :tax, "Exento de IVA:" %>
+  <%= f.check_box :tax %><br><br>
+
+  <%= f.submit "Enviar" %>
+
+<% end %>
